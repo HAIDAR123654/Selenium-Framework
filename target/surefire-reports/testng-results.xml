@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="5" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-04T14:51:24 IST" name="Suite" finished-at="2022-09-04T14:51:52 IST" duration-ms="28431">
+  <suite started-at="2022-09-20T16:36:43 IST" name="Surefire suite" finished-at="2022-09-20T16:38:01 IST" duration-ms="78491">
     <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorValidationsTest.LoginErrorValidation()[pri:0, instance:AtechCompany.tests.ErrorValidationsTest@17b016ac]" name="LoginErrorValidation" class="AtechCompany.tests.ErrorValidationsTest"/>
+      </group> <!-- ErrorHandling -->
       <group name="Purchase">
-        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:AtechCompany.tests.SubmitOrderTest@158da8e]" name="submitOrder" class="AtechCompany.tests.SubmitOrderTest"/>
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:AtechCompany.tests.SubmitOrderTest@415ef4d8]" name="submitOrder" class="AtechCompany.tests.SubmitOrderTest"/>
       </group> <!-- Purchase -->
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@535b1ae6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-09-04T14:51:24 IST" name="Error Validation Test" finished-at="2022-09-04T14:51:24 IST" duration-ms="18">
-    </test> <!-- Error Validation Test -->
-    <test started-at="2022-09-04T14:51:24 IST" name="Submit Order Test" finished-at="2022-09-04T14:51:52 IST" duration-ms="28431">
+    <test started-at="2022-09-20T16:36:43 IST" name="Surefire test" finished-at="2022-09-20T16:38:01 IST" duration-ms="78491">
       <class name="AtechCompany.tests.SubmitOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:AtechCompany.tests.SubmitOrderTest@158da8e]" started-at="2022-09-04T14:51:24 IST" name="launchApplication" finished-at="2022-09-04T14:51:39 IST" duration-ms="14488" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:AtechCompany.tests.SubmitOrderTest@415ef4d8]" started-at="2022-09-20T16:37:14 IST" name="launchApplication" finished-at="2022-09-20T16:37:22 IST" duration-ms="8152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:AtechCompany.tests.SubmitOrderTest@158da8e]" started-at="2022-09-04T14:51:39 IST" name="submitOrder" data-provider="getData" finished-at="2022-09-04T14:51:42 IST" duration-ms="3479" status="PASS">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:AtechCompany.tests.SubmitOrderTest@415ef4d8]" started-at="2022-09-20T16:37:22 IST" name="submitOrder" data-provider="getData" finished-at="2022-09-20T16:37:26 IST" duration-ms="3911" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,15 +31,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AtechCompany.tests.SubmitOrderTest@158da8e]" started-at="2022-09-04T14:51:42 IST" name="tearDown" finished-at="2022-09-04T14:51:42 IST" duration-ms="68" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AtechCompany.tests.SubmitOrderTest@415ef4d8]" started-at="2022-09-20T16:37:26 IST" name="tearDown" finished-at="2022-09-20T16:37:27 IST" duration-ms="549" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:AtechCompany.tests.SubmitOrderTest@158da8e]" started-at="2022-09-04T14:51:42 IST" name="launchApplication" finished-at="2022-09-04T14:51:49 IST" duration-ms="6504" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:AtechCompany.tests.SubmitOrderTest@415ef4d8]" started-at="2022-09-20T16:37:27 IST" name="launchApplication" finished-at="2022-09-20T16:37:35 IST" duration-ms="8764" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:AtechCompany.tests.SubmitOrderTest@158da8e]" started-at="2022-09-04T14:51:49 IST" name="submitOrder" data-provider="getData" finished-at="2022-09-04T14:51:52 IST" duration-ms="3412" status="PASS">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:AtechCompany.tests.SubmitOrderTest@415ef4d8]" started-at="2022-09-20T16:37:35 IST" name="submitOrder" data-provider="getData" finished-at="2022-09-20T16:37:39 IST" duration-ms="3755" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -46,11 +50,82 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AtechCompany.tests.SubmitOrderTest@158da8e]" started-at="2022-09-04T14:51:52 IST" name="tearDown" finished-at="2022-09-04T14:51:52 IST" duration-ms="35" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AtechCompany.tests.SubmitOrderTest@415ef4d8]" started-at="2022-09-20T16:37:39 IST" name="tearDown" finished-at="2022-09-20T16:37:39 IST" duration-ms="392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:AtechCompany.tests.SubmitOrderTest@415ef4d8]" started-at="2022-09-20T16:37:40 IST" name="launchApplication" finished-at="2022-09-20T16:37:47 IST" duration-ms="7405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="OrderHistoryTest()[pri:0, instance:AtechCompany.tests.SubmitOrderTest@415ef4d8]" started-at="2022-09-20T16:37:47 IST" name="OrderHistoryTest" finished-at="2022-09-20T16:37:48 IST" depends-on-methods="AtechCompany.tests.SubmitOrderTest.submitOrder" duration-ms="891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AtechCompany.tests.SubmitOrderTest@415ef4d8]" started-at="2022-09-20T16:37:48 IST" name="tearDown" finished-at="2022-09-20T16:37:48 IST" duration-ms="88" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- AtechCompany.tests.SubmitOrderTest -->
-    </test> <!-- Submit Order Test -->
-  </suite> <!-- Suite -->
+      <class name="AtechCompany.tests.ErrorValidationsTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:AtechCompany.tests.ErrorValidationsTest@17b016ac]" started-at="2022-09-20T16:36:43 IST" name="launchApplication" finished-at="2022-09-20T16:36:58 IST" duration-ms="15905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="LoginErrorValidation()[pri:0, instance:AtechCompany.tests.ErrorValidationsTest@17b016ac]" started-at="2022-09-20T16:36:58 IST" name="LoginErrorValidation" finished-at="2022-09-20T16:36:59 IST" duration-ms="526" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AtechCompany.tests.ErrorValidationsTest@17b016ac]" started-at="2022-09-20T16:36:59 IST" name="tearDown" finished-at="2022-09-20T16:36:59 IST" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:AtechCompany.tests.ErrorValidationsTest@17b016ac]" started-at="2022-09-20T16:36:59 IST" name="launchApplication" finished-at="2022-09-20T16:37:07 IST" duration-ms="8007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="ProductErrorValidation()[pri:0, instance:AtechCompany.tests.ErrorValidationsTest@17b016ac]" started-at="2022-09-20T16:37:07 IST" name="ProductErrorValidation" finished-at="2022-09-20T16:37:13 IST" duration-ms="5707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AtechCompany.tests.ErrorValidationsTest@17b016ac]" started-at="2022-09-20T16:37:13 IST" name="tearDown" finished-at="2022-09-20T16:37:13 IST" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AtechCompany.tests.ErrorValidationsTest -->
+      <class name="cucumber.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRunner@535b1ae6]" started-at="2022-09-20T16:37:48 IST" name="setUpClass" finished-at="2022-09-20T16:37:50 IST" duration-ms="1938" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@27caa186]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@535b1ae6]" started-at="2022-09-20T16:37:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-20T16:38:01 IST" duration-ms="10896" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Positive Test for Submit the Order"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Purchase the Order from ECoomerce website."]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRunner@535b1ae6]" started-at="2022-09-20T16:38:01 IST" name="tearDownClass" finished-at="2022-09-20T16:38:01 IST" duration-ms="279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumber.TestNGTestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>
