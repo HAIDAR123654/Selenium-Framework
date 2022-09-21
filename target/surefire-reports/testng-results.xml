@@ -1,26 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="3" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-20T16:36:43 IST" name="Surefire suite" finished-at="2022-09-20T16:38:01 IST" duration-ms="78491">
+  <suite started-at="2022-09-21T12:59:15 IST" name="Suite" finished-at="2022-09-21T13:00:27 IST" duration-ms="71135">
     <groups>
       <group name="ErrorHandling">
-        <method signature="ErrorValidationsTest.LoginErrorValidation()[pri:0, instance:AtechCompany.tests.ErrorValidationsTest@17b016ac]" name="LoginErrorValidation" class="AtechCompany.tests.ErrorValidationsTest"/>
+        <method signature="ErrorValidationsTest.LoginErrorValidation()[pri:0, instance:AtechCompany.tests.ErrorValidationsTest@58eac00e]" name="LoginErrorValidation" class="AtechCompany.tests.ErrorValidationsTest"/>
       </group> <!-- ErrorHandling -->
       <group name="Purchase">
-        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:AtechCompany.tests.SubmitOrderTest@415ef4d8]" name="submitOrder" class="AtechCompany.tests.SubmitOrderTest"/>
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:AtechCompany.tests.SubmitOrderTest@9b47400]" name="submitOrder" class="AtechCompany.tests.SubmitOrderTest"/>
       </group> <!-- Purchase -->
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@535b1ae6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-09-20T16:36:43 IST" name="Surefire test" finished-at="2022-09-20T16:38:01 IST" duration-ms="78491">
-      <class name="AtechCompany.tests.SubmitOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:AtechCompany.tests.SubmitOrderTest@415ef4d8]" started-at="2022-09-20T16:37:14 IST" name="launchApplication" finished-at="2022-09-20T16:37:22 IST" duration-ms="8152" status="PASS">
+    <test started-at="2022-09-21T12:59:15 IST" name="Error Validation Test" finished-at="2022-09-21T13:00:24 IST" duration-ms="68950">
+      <class name="AtechCompany.tests.ErrorValidationsTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:AtechCompany.tests.ErrorValidationsTest@58eac00e]" started-at="2022-09-21T12:59:16 IST" name="launchApplication" finished-at="2022-09-21T12:59:57 IST" duration-ms="40967" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:AtechCompany.tests.SubmitOrderTest@415ef4d8]" started-at="2022-09-20T16:37:22 IST" name="submitOrder" data-provider="getData" finished-at="2022-09-20T16:37:26 IST" duration-ms="3911" status="PASS">
+        <test-method signature="LoginErrorValidation()[pri:0, instance:AtechCompany.tests.ErrorValidationsTest@58eac00e]" started-at="2022-09-21T12:59:57 IST" name="LoginErrorValidation" finished-at="2022-09-21T12:59:59 IST" duration-ms="2019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AtechCompany.tests.ErrorValidationsTest@58eac00e]" started-at="2022-09-21T12:59:59 IST" name="tearDown" finished-at="2022-09-21T13:00:06 IST" duration-ms="7050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:AtechCompany.tests.ErrorValidationsTest@58eac00e]" started-at="2022-09-21T13:00:06 IST" name="launchApplication" finished-at="2022-09-21T13:00:21 IST" duration-ms="15219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="ProductErrorValidation()[pri:0, instance:AtechCompany.tests.ErrorValidationsTest@58eac00e]" started-at="2022-09-21T13:00:21 IST" name="ProductErrorValidation" finished-at="2022-09-21T13:00:24 IST" duration-ms="3174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AtechCompany.tests.ErrorValidationsTest@58eac00e]" started-at="2022-09-21T13:00:24 IST" name="tearDown" finished-at="2022-09-21T13:00:24 IST" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AtechCompany.tests.ErrorValidationsTest -->
+    </test> <!-- Error Validation Test -->
+    <test started-at="2022-09-21T12:59:15 IST" name="Submit Order Test" finished-at="2022-09-21T13:00:27 IST" duration-ms="71135">
+      <class name="AtechCompany.tests.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:AtechCompany.tests.SubmitOrderTest@9b47400]" started-at="2022-09-21T12:59:16 IST" name="launchApplication" finished-at="2022-09-21T12:59:57 IST" duration-ms="40256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:AtechCompany.tests.SubmitOrderTest@9b47400]" started-at="2022-09-21T12:59:57 IST" name="submitOrder" data-provider="getData" finished-at="2022-09-21T13:00:08 IST" duration-ms="11334" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -31,15 +56,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AtechCompany.tests.SubmitOrderTest@415ef4d8]" started-at="2022-09-20T16:37:26 IST" name="tearDown" finished-at="2022-09-20T16:37:27 IST" duration-ms="549" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AtechCompany.tests.SubmitOrderTest@9b47400]" started-at="2022-09-21T13:00:08 IST" name="tearDown" finished-at="2022-09-21T13:00:10 IST" duration-ms="1596" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:AtechCompany.tests.SubmitOrderTest@415ef4d8]" started-at="2022-09-20T16:37:27 IST" name="launchApplication" finished-at="2022-09-20T16:37:35 IST" duration-ms="8764" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:AtechCompany.tests.SubmitOrderTest@9b47400]" started-at="2022-09-21T13:00:10 IST" name="launchApplication" finished-at="2022-09-21T13:00:21 IST" duration-ms="11401" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:AtechCompany.tests.SubmitOrderTest@415ef4d8]" started-at="2022-09-20T16:37:35 IST" name="submitOrder" data-provider="getData" finished-at="2022-09-20T16:37:39 IST" duration-ms="3755" status="PASS">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:AtechCompany.tests.SubmitOrderTest@9b47400]" started-at="2022-09-21T13:00:21 IST" name="submitOrder" data-provider="getData" finished-at="2022-09-21T13:00:26 IST" duration-ms="4808" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -47,85 +72,111 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (1173, 750)
+  (Session info: chrome=105.0.5195.127)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'MY-LAPTOP', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7962c9c65ca3e938b361cfa6e3edafbd, clickElement {id=cd9073ac-5a3d-462e-a8f5-228357c05f52}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ha890\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57882}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57882/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (7962c9c65ca3e938b361cfa6e3edafbd)] -> css selector: .totalRow button]
+Session ID: 7962c9c65ca3e938b361cfa6e3edafbd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1173, 750)
+  (Session info: chrome=105.0.5195.127)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'MY-LAPTOP', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7962c9c65ca3e938b361cfa6e3edafbd, clickElement {id=cd9073ac-5a3d-462e-a8f5-228357c05f52}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ha890\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57882}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57882/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (7962c9c65ca3e938b361cfa6e3edafbd)] -> css selector: .totalRow button]
+Session ID: 7962c9c65ca3e938b361cfa6e3edafbd
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy4/jdk.proxy4.$Proxy37.click(Unknown Source)
+at AtechCompany.pageObjects.CartPage.goToCheckout(CartPage.java:34)
+at AtechCompany.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AtechCompany.tests.SubmitOrderTest@415ef4d8]" started-at="2022-09-20T16:37:39 IST" name="tearDown" finished-at="2022-09-20T16:37:39 IST" duration-ms="392" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AtechCompany.tests.SubmitOrderTest@9b47400]" started-at="2022-09-21T13:00:26 IST" name="tearDown" finished-at="2022-09-21T13:00:27 IST" duration-ms="175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:AtechCompany.tests.SubmitOrderTest@415ef4d8]" started-at="2022-09-20T16:37:40 IST" name="launchApplication" finished-at="2022-09-20T16:37:47 IST" duration-ms="7405" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="OrderHistoryTest()[pri:0, instance:AtechCompany.tests.SubmitOrderTest@415ef4d8]" started-at="2022-09-20T16:37:47 IST" name="OrderHistoryTest" finished-at="2022-09-20T16:37:48 IST" depends-on-methods="AtechCompany.tests.SubmitOrderTest.submitOrder" duration-ms="891" status="PASS">
+        <test-method signature="OrderHistoryTest()[pri:0, instance:AtechCompany.tests.SubmitOrderTest@9b47400]" started-at="2022-09-21T13:00:27 IST" name="OrderHistoryTest" finished-at="2022-09-21T13:00:27 IST" depends-on-methods="AtechCompany.tests.SubmitOrderTest.submitOrder" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method AtechCompany.tests.SubmitOrderTest.OrderHistoryTest() on instance AtechCompany.tests.SubmitOrderTest@9b47400 depends on not successfully finished methods 
+[AtechCompany.tests.SubmitOrderTest.submitOrder() on instance AtechCompany.tests.SubmitOrderTest@9b47400]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method AtechCompany.tests.SubmitOrderTest.OrderHistoryTest() on instance AtechCompany.tests.SubmitOrderTest@9b47400 depends on not successfully finished methods 
+[AtechCompany.tests.SubmitOrderTest.submitOrder() on instance AtechCompany.tests.SubmitOrderTest@9b47400]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OrderHistoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AtechCompany.tests.SubmitOrderTest@415ef4d8]" started-at="2022-09-20T16:37:48 IST" name="tearDown" finished-at="2022-09-20T16:37:48 IST" duration-ms="88" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- AtechCompany.tests.SubmitOrderTest -->
-      <class name="AtechCompany.tests.ErrorValidationsTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:AtechCompany.tests.ErrorValidationsTest@17b016ac]" started-at="2022-09-20T16:36:43 IST" name="launchApplication" finished-at="2022-09-20T16:36:58 IST" duration-ms="15905" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="LoginErrorValidation()[pri:0, instance:AtechCompany.tests.ErrorValidationsTest@17b016ac]" started-at="2022-09-20T16:36:58 IST" name="LoginErrorValidation" finished-at="2022-09-20T16:36:59 IST" duration-ms="526" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AtechCompany.tests.ErrorValidationsTest@17b016ac]" started-at="2022-09-20T16:36:59 IST" name="tearDown" finished-at="2022-09-20T16:36:59 IST" duration-ms="252" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:AtechCompany.tests.ErrorValidationsTest@17b016ac]" started-at="2022-09-20T16:36:59 IST" name="launchApplication" finished-at="2022-09-20T16:37:07 IST" duration-ms="8007" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="ProductErrorValidation()[pri:0, instance:AtechCompany.tests.ErrorValidationsTest@17b016ac]" started-at="2022-09-20T16:37:07 IST" name="ProductErrorValidation" finished-at="2022-09-20T16:37:13 IST" duration-ms="5707" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProductErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AtechCompany.tests.ErrorValidationsTest@17b016ac]" started-at="2022-09-20T16:37:13 IST" name="tearDown" finished-at="2022-09-20T16:37:13 IST" duration-ms="98" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- AtechCompany.tests.ErrorValidationsTest -->
-      <class name="cucumber.TestNGTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRunner@535b1ae6]" started-at="2022-09-20T16:37:48 IST" name="setUpClass" finished-at="2022-09-20T16:37:50 IST" duration-ms="1938" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@27caa186]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@535b1ae6]" started-at="2022-09-20T16:37:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-20T16:38:01 IST" duration-ms="10896" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Positive Test for Submit the Order"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Purchase the Order from ECoomerce website."]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRunner@535b1ae6]" started-at="2022-09-20T16:38:01 IST" name="tearDownClass" finished-at="2022-09-20T16:38:01 IST" duration-ms="279" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- cucumber.TestNGTestRunner -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+    </test> <!-- Submit Order Test -->
+  </suite> <!-- Suite -->
 </testng-results>

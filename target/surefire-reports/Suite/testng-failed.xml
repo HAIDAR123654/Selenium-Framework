@@ -4,15 +4,16 @@
   <listeners>
     <listener class-name="AtechCompany.TestComponents.Listeners"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Error Validation Test(failed)" verbose="0">
+  <test thread-count="5" parallel="tests" name="Submit Order Test(failed)" verbose="0">
     <classes>
-      <class name="AtechCompany.tests.ErrorValidationsTest">
+      <class name="AtechCompany.tests.SubmitOrderTest">
         <methods>
           <include name="launchApplication"/>
           <include name="tearDown"/>
-          <include name="LoginErrorValidation"/>
+          <include name="submitOrder" invocation-numbers="1"/>
+          <include name="OrderHistoryTest"/>
         </methods>
-      </class> <!-- AtechCompany.tests.ErrorValidationsTest -->
+      </class> <!-- AtechCompany.tests.SubmitOrderTest -->
     </classes>
-  </test> <!-- Error Validation Test(failed) -->
+  </test> <!-- Submit Order Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
